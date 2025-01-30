@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Pasek scrolla*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 107, 110);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+/*Pasek menu*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #181818;
+  margin: auto;
+}
+
+/*Logo strony*/
+
+.logo {
+  color: white;
+  font-size: 29px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*Przyciski na pasku menu*/
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: auto;
+  font-size: 13px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #d9d9d9;
+  transition: 0.4s;
+}
+
+nav .menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+nav .menu-icon:hover {
+  color: #e2e2e2;
+}
+
+/*O bocie*/
+
+.bot {
+  background-color: #272727;
+  width: 100%;
+  padding: 45px 0px;
+}
+
+.bot img {
+  height: auto;
+  width: 300px;
+  border-radius: 100%;
+}
+
+.about-bot {
+  width: 630px;
+}
+
+#bot {
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-bot h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 27px;
+  margin-top: 30px;
+}
+
+.about-bot p {
+  color: rgb(233, 233, 233);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+}
+
+.about-bot .button {
+  background-color: #6a6a6a;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 19px;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.about-bot .button:hover {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+/*Komendy*/
+
+#commands {
+  background-color: #323232;
+  width: 100%;
+  padding: 30px 30px;
+}
+
+#commands h2 {
+  color: white;
+  font-size: 45px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+#commands h3 {
+  color: rgb(233, 233, 233);
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 25px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+#commands p {
+  padding: 13px 20px;
+  text-align: left;
+  color: #ffffff;
+  font-size: 20px;
+  background-color: #4f4f4f;
+  border-radius: 20px;
+  line-height: 1.4;
+}
+
+span {
+  color: rgb(188, 226, 247);
+  padding: 1px 2px;
+}
+
+/*Copyright*/
+
+#copyright {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background: #101010;
+  display: flex;
+  justify-content: center;
+}
+
+.end {
+  position: absolute;
+  color: #ffffff;
+  bottom: 30px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .bot img {
+    width: 40%;
+  }
+
+  .about-bot {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about-bot h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .about-bot p {
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 14px;
+  }
+
+  .about-bot .button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #commands h3 {
+    font-size: 21px;
+  }
+
+  #commands h2 {
+    font-size: 36px;
+  }
+
+  #bot {
+    flex-direction: column;
+  }
+
+  #changes {
+    font-size: 21px;
+  }
+
+  nav ul {
+    flex-flow: column nowrap;
+    background-color: #181818;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    transform: translateX(0%);
+  }
+
+  nav ul li {
+    margin: 27px 0;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+  }
+
+  nav .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1100;
+  }
+
+  nav ul.show {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+  }
+}

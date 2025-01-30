@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Biblijny bot na Discorda" />
+    <meta
+      name="keywords"
+      content="Biblia, biblijny bot, bible, biblia bot, bible bot, pismo święte, holy bible"
+    />
+    <title>Biblia Bot</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="images/Biblia.png" type="image/x-icon" />
+    <script defer src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <h2 class="logo">Biblia Bot</h2>
+        <div class="menu-icon">&#9776;</div>
+        <ul>
+          <li><a href="#commands">Komendy</a></li>
+          <li>
+            <a href="https://dsc.gg/biblia-bot" target="_blank">Zaproś bota</a>
+          </li>
+          <li>
+            <a href="terms-of-service.html" target="_blank">Terms of Service</a>
+          </li>
+          <li>
+            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bot">
+        <div id="bot">
+          <img
+            src="Images/Biblia.png"
+            alt="Biblia Bot"
+            width="500"
+            height="500"
+          />
+          <div class="about-bot">
+            <h2>Dodaj biblijnego bota na swój serwer</h2>
+            <p>
+              Biblia to bot, który umożliwia czytanie Biblii w wielu językach,
+              co pozwala na dogłębne badanie różnic między tekstami oryginalnymi
+              a ich tłumaczeniami. Zawiera on przekłady Pisma Świętego w języku
+              polskim, angielskim, niemieckim, łacińskim, greckim i hebrajskim.
+            </p>
+            <a class="button" href="https://dsc.gg/biblia-bot" target="_blank"
+              >Zaproś bota na serwer</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!--Komendy-->
+      
+      <section class="commands">
+        <div id="commands">
+          <h2>Lista komend</h2>
+          <h3>Poniżej znajdziesz listę slash komend bota biblijnego:</h3>
+          <p><span>/help</span> - instrukcja obsługi bota</p>
+          <br />
+          <p>
+            <span>[księga] [rozdział]:[werset-(y)] [przekład]</span> - schemat
+            komendy do uzyskania fragmentów z Biblii. Jeśli użytkownik chce
+            uzyskać fragment z danego przekładu Pisma Świętego należy podać jego
+            skrót. Przykład: <span>Jana 3:16-17 BG</span>. Jeśli użytkownik
+            ustawił sobie domyślny przekład Pisma Świętego to nie trzeba podawać
+            jego skrótu.
+          </p>
+          <br />
+          <p>
+            <span>/setversion [translation]</span> - ustawia domyślny przekład
+            Pisma Świętego. Aby ustawić domyślny przekład Pisma Świętego należy
+            wpisać jego skrót. Wszystkie skróty przekładów są dostępne w
+            <span>/versions</span>
+          </p>
+          <br />
+          <p>
+            <span>/search [text]</span> - służy do wyszukiwania fragmentów w danym
+            przekładzie Biblii
+          </p>
+          <br />
+          <p>
+            <span>/versions</span> - pokazuje dostępne przekłady Pisma Świętego
+          </p>
+          <br />
+          <p><span>/information</span> - wyświetla informacje o bocie</p>
+          <br />
+          <p><span>/invite</span> - wyświetla link z zaproszeniem</p>
+          <br />
+          <p><span>/contact</span> - zawiera kontakt do autora bota</p>
+          <br />
+          <p>
+            <span>/random</span> - wyświetla losowy werset z Biblii
+          </p>
+          <br />
+          <p>
+            <span>/dailyverse [hour]</span> - wyświetla werset dnia z Biblii. Opcjonalnie można ustawić godzinę wysłania
+            wiadomości w formacie <b>HH:MM</b>
+          </p>
+          <br />
+          <p>
+            <span>/removeuserdata</span> - usuwa dane użytkownika z bazy danych
+          </p>
+          <br>
+          <p>
+            <span>/maps [map]</span> - wyświetla wybraną mapę z Biblii
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="copyright">
+        <p class="end">© Copyright 2023-2024 Code Joan</p>
+      </div>
+    </footer>
+  </body>
+</html>
