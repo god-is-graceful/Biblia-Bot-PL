@@ -1,0 +1,4 @@
+RewriteEngine on
+
+RewriteRule ^privacy-policy privacy-policy.html
+RewriteRule ^terms-of-service terms-of-service.html
